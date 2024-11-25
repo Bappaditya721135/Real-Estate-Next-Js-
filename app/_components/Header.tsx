@@ -41,7 +41,9 @@ const Header = () => {
         {isSignedIn ? (
           <UserButton />
         ) : (
-          <Button className="text-[0.8rem] md:text-[1rem]">Login</Button>
+          <Link href="/sign-up">
+            <Button className="text-[0.8rem] md:text-[1rem]">Login</Button>
+          </Link>
         )}
       </div>
       <Menu className="h-[2rem] w-[2.2rem] sm:hidden" />
